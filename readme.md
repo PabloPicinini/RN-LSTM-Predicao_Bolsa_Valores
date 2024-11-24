@@ -1,4 +1,7 @@
 # **Predição de Valores do BBAS3 utlizando Redes Neurais**
+![Python](https://img.shields.io/badge/python-3.9+-blue)
+![TensorFlow](https://img.shields.io/badge/TensorFlow-2.6-orange)
+![Grafana](https://img.shields.io/badge/Grafana-monitoring-brightgreen)
 
 Este projeto tem como objetivo desenvolver uma API para realizar previsões de valores da ação BBAS3 (Banco do Brasil) usando um modelo de Redes Neurais Recorrentes (RNN) com camadas LSTM. A API oferece duas rotas principais:
 
@@ -10,10 +13,36 @@ O projeto permite a visualização dos resultados em tempo real através do Graf
 
 ---
 
+## Resultados Visuais
+
+### API
+![API Geral](media/images/API.png)
+
+#### **CSV**
+![Rota CSV](media/images/API_CSV.png)
+
+#### **Diário**
+![Rota Diário](media/images/API-DIARIO.png)
+
+#### **Consulta Predições**
+![Rota Consulta de Predições](media/images/API-GET_PREDICTIONS.png)
+
+### Grafana
+![Grafana](media/images/GRAFANA.png)
+
+### Vídeo de Execução do Modelo
+Aqui está um vídeo mostrando o modelo em execução:
+
+<video src="media/video/video_projeto.mp4" controls="controls" style="max-width: 100%;"></video>
+
+Ou clique no link abaixo para assistir a explicação do modelo e API no YOUTUBE:
+[Assista ao vídeo](https://www.youtube.com/watch?v=pQQdWZEa2Pg)
+
+
 ## **Estrutura do Projeto**
 ```markdown
 RN_Predicao_Acao/
-├── app/
+├── app/ # Código da aplicação e rotas
 │   ├── main.py # Aplicação Principal da API
 │   │
 │   ├── routes/
@@ -31,17 +60,21 @@ RN_Predicao_Acao/
 │           └── resources.py # Monitoramento
 │           
 │
-├── data/
+├── data/ # Banco de dados e operações relacionadas
 │   ├── data.py # Realiza as operações no Banco de Dados
 │   └── metrics.db # Banco de Dados
 │
-├── LSTM/ # Modelo De Redes Neurais
+├── LSTM/ # Modelos e histórico de treinamento
 │   ├── models/ # Contém Históricos de Treinamento com diversos parâmetros
 │   ├── modelo_llm.h5 # Modelo utilizado para predição na API
 │   ├── scaler.joblib # Scaler utilizado para normalização dos dados
 │   └── modelo.ipynb # Conjunto de testes e treinamentos de modelos e processamento dos dados
 │
+├── media/ # Recursos para visualização e relatórios
+│   ├── data.py # Realiza as operações no Banco de Dados
+│   └── metrics.db # Banco de Dados
 └── readme.md
+
 ```
 
 ## **Modelo de Redes Neurais**
