@@ -35,7 +35,11 @@ Aqui está um vídeo mostrando o modelo em execução:
 
 <video src="media/video/video_projeto.mp4" controls="controls" style="max-width: 100%;"></video>
 
-Ou clique no link abaixo para assistir a explicação do modelo e API no YOUTUBE:
+Ou clique no link abaixo para assistir diretamente:
+
+[Assista ao vídeo](media/video/video_projeto.mp4)
+
+Clique no link abaixo para assistir a explicação do modelo e API no YOUTUBE:
 [Assista ao vídeo](https://www.youtube.com/watch?v=pQQdWZEa2Pg)
 
 
