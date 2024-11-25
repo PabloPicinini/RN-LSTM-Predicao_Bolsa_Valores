@@ -74,9 +74,9 @@ RN_Predicao_Acao/
 │   ├── scaler.joblib # Scaler utilizado para normalização dos dados
 │   └── modelo.ipynb # Conjunto de testes e treinamentos de modelos e processamento dos dados
 │
-├── media/ # Recursos para visualização e relatórios
-│   ├── data.py # Realiza as operações no Banco de Dados
-│   └── metrics.db # Banco de Dados
+├── media/ # Arquivo de Media do Projeto Criado
+│   ├── images/ # Imagens do Projeto
+│   └── video/ # Video do Projeto
 └── readme.md
 
 ```
